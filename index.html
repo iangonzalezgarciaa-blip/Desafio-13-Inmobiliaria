@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inmobiliaria ADL</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <nav class="navbar">
+        <h1>Inmobiliaria ADL</h1>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="propiedades_venta.html">En Venta</a>
+            <a href="propiedades_alquiler.html">Alquiler</a>
+        </div>
+    </nav>
+
+    <div class="hero-text">
+        <h2>Encuentra tu nueva propiedad</h2>
+    </div>
+</header>
+
+<main class="container">
+
+    <section>
+        <h2>Propiedades en venta</h2>
+        <div id="venta-container" class="grid"></div>
+        <a href="propiedades_venta.html" class="btn">Ver todas en venta</a>
+    </section>
+
+    <section>
+        <h2>Propiedades en alquiler</h2>
+        <div id="alquiler-container" class="grid"></div>
+        <a href="propiedades_alquiler.html" class="btn">Ver todas en alquiler</a>
+    </section>
+
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/Animations.js"></script>
+
+<script>
+renderPropiedades(propiedades_venta, "venta-container", 3);
+renderPropiedades(propiedades_alquiler, "alquiler-container", 3);
+</script>
+
+</body>
+</html>
